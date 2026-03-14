@@ -1,0 +1,122 @@
+body{
+margin:0;
+padding:0;
+width:260px;
+height:180px;
+
+font-family:"Segoe UI", Arial, sans-serif;
+
+background:#020617;
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+}
+
+/* Main Clock Box */
+
+.clock-container{
+
+text-align:center;
+
+background:rgba(15,23,42,0.8);
+
+border-radius:15px;
+
+padding:20px;
+
+border:1px solid rgba(0,255,255,0.2);
+
+box-shadow:
+0 0 10px #00ffff,
+0 0 20px #00ffff,
+inset 0 0 10px rgba(0,255,255,0.3);
+
+animation: glowBox 3s infinite alternate;
+
+}
+
+/* Digital Clock */
+
+.clock{
+
+font-size:40px;
+font-weight:700;
+
+letter-spacing:3px;
+
+color:#00ffff;
+
+text-shadow:
+0 0 5px #00ffff,
+0 0 10px #00ffff,
+0 0 20px #00ffff;
+
+animation: pulse 2s infinite;
+
+}
+
+/* blinking colon */
+
+.colon{
+
+animation: blink 1s infinite;
+
+}
+
+/* AM PM */
+
+#ampm{
+margin-top:6px;
+font-size:14px;
+opacity:0.8;
+}
+
+/* Date */
+
+#date{
+margin-top:12px;
+font-size:16px;
+}
+
+/* Day */
+
+#day{
+font-size:14px;
+opacity:0.7;
+}
+
+/* Animations */
+
+@keyframes blink{
+
+0%{opacity:1;}
+50%{opacity:0;}
+100%{opacity:1;}
+
+}
+
+@keyframes pulse{
+
+0%{text-shadow:0 0 5px #00ffff;}
+50%{text-shadow:0 0 20px #00ffff;}
+100%{text-shadow:0 0 5px #00ffff;}
+
+}
+
+@keyframes glowBox{
+
+0%{
+box-shadow:
+0 0 10px #00ffff,
+0 0 20px #00ffff;
+}
+
+100%{
+box-shadow:
+0 0 20px #00ffff,
+0 0 40px #00ffff;
+}
+
+}
