@@ -36,7 +36,9 @@ new tab.
     ├── background.js
     ├── popup.html
     ├── popup.js
+    ├── style.css
     └── icon.png
+
 
 ------------------------------------------------------------------------
 
